@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import * as $ from 'jQuery';
+import * as $ from 'jquery';
 import './style.less';
 const Fire = () => {
   const Carousel = () => {
