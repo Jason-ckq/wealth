@@ -1,0 +1,161 @@
+/*文字不可复制*/
+ul {
+  position: absolute;
+  -webkit-margin-before: 0em;
+  -webkit-margin-after: 0em;
+  -webkit-padding-start: 0px;
+}
+
+#canvas {
+  display: block;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+li {
+  position: absolute;
+  width: 6px;
+  height: 2px;
+  border-radius: 50% 1px 1px 50%;
+  transform-origin: 50%;
+  list-style: none;
+}
+
+.fire {
+  position: absolute;
+  top: 100%;
+  width: 6px;
+  height: 6px;
+  background: yellow;
+  border-radius: 50%;
+  float: left;
+}
+
+.change1 {
+  animation: change1 1s linear infinite;
+}
+
+@keyframes change1 {
+  from {
+    width: 3px;
+    height: 1px;
+    border-radius: 50% 1px 1px 50%;
+  }
+  to {
+    width: 18px;
+    height: 6px;
+    border-radius: 50% 3px 3px 50%;
+  }
+}
+
+.change2 {
+  animation: change2 0.5s linear infinite;
+}
+
+@keyframes change2 {
+  from {
+    width: 18px;
+    height: 6px;
+    border-radius: 50% 3px 3px 50%;
+    opacity: 1;
+  }
+  to {
+    width: 3px;
+    height: 1px;
+    border-radius: 50% 1px 1px 50%;
+    opacity: 0;
+  }
+}
+
+@import url(https://fonts.googleapis.com/css?family=Concert+One);
+
+h1 {
+  animation: glow 10s ease-in-out infinite;
+  /* For less laggy effect, uncomment this:
+  
+  animation:none;
+  -webkit-text-stroke:1px #fff; 
+  
+=========== */
+}
+
+* {
+  box-sizing: border-box;
+}
+
+figure {
+  animation: wobble 5s ease-in-out infinite;
+  transform-origin: center center;
+  transform-style: preserve-3d;
+}
+
+@keyframes wobble {
+  0%,
+  100% {
+    transform: rotate3d(1, 1, 0, 15deg);
+  }
+  25% {
+    transform: rotate3d(-1, 1, 0, 15deg);
+  }
+  50% {
+    transform: rotate3d(-1, -1, 0, 15deg);
+  }
+  75% {
+    transform: rotate3d(1, -1, 0, 15deg);
+  }
+}
+
+h1 {
+  font-family: MaShanZhengRegular;
+  position: absolute;
+  font-size: 20rem;
+  /* color: #efd6b7; */
+}
+
+@keyframes glow {
+  0%,
+  100% {
+    text-shadow: 0 0 0.3rem rgba(230, 12, 95, 0.377);
+  }
+  25% {
+    text-shadow: 0 0 0.3rem rgba(248, 41, 4, 0.397);
+  }
+  50% {
+    text-shadow: 0 0 0.3rem rgb(245, 24, 24, 0.4);
+  }
+  75% {
+    text-shadow: 0 0 0.3rem rgb(226, 52, 8, 0.4);
+  }
+}
+
+h1:nth-child(2) {
+  transform: translateZ(0.25rem);
+}
+h1:nth-child(3) {
+  transform: translateZ(0.5rem);
+}
+h1:nth-child(4) {
+  transform: translateZ(0.3rem);
+}
+h1:nth-child(5) {
+  transform: translateZ(1rem);
+}
+h1:nth-child(6) {
+  transform: translateZ(1.25rem);
+}
+h1:nth-child(7) {
+  transform: translateZ(1.5rem);
+}
+h1:nth-child(8) {
+  transform: translateZ(1.75rem);
+}
+h1:nth-child(9) {
+  transform: translateZ(2rem);
+}
+h1:nth-child(10) {
+  transform: translateZ(2.25rem);
+}

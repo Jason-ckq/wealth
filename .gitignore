@@ -4,8 +4,13 @@ bin-release/
 [Oo]bj/
 [Bb]in/
 
+/node_modules
+# /dist
+
 # Other files and folders
 .settings/
+
+/server/static
 
 # Executables
 *.swf

@@ -1,0 +1,117 @@
+.displayer {
+  width: 70%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1;
+  .wu {
+    height: 100%;
+    width: 20%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img {
+      position: absolute;
+      width: 11.2rem;
+      object-fit: contain;
+      transform: translateX(-50%);
+      animation: wobble 8s ease-in-out infinite;
+    }
+
+    @keyframes wobble {
+      0%,
+      100% {
+        transform: rotate3d(1, 1, 0, 14deg);
+        transform: scale(0.9);
+        opacity: 1;
+      }
+      25% {
+        transform: rotate3d(-1, 1, 0, 14deg);
+        transform: scale(0.95);
+        opacity: 0.8;
+      }
+      50% {
+        transform: rotate3d(-1, -1, 0, 14deg);
+        transform: scale(1.1);
+        opacity: 0.9;
+      }
+      75% {
+        transform: rotate3d(1, -1, 0, 14deg);
+        transform: scale(1);
+        opacity: 1;
+      }
+    }
+    .huan {
+      position: absolute;
+      top: 10%;
+      // left: 50%;
+    }
+    .xi {
+      position: absolute;
+      top: 68%;
+      // left: 50%;
+    }
+  }
+  .photowall {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 78%;
+    height: 100%;
+
+    .summary {
+      color: #fce1e0;
+      height: 25%;
+      width: 100%;
+      border: 1px solid #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      .word {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        > span {
+          color: #ffbc6a;
+          display: inline-block;
+          font-family: ZCOOLXiaoWei;
+          font-weight: bold;
+          /* font-family: MaShanZhengRegular; */
+          font-size: 5rem;
+          margin: 0rem 0.2rem;
+          /* color: #ffbc6a; */
+          /* padding: 0.1rem 0.2rem; */
+          /* border-radius: 25rem; */
+        }
+      }
+
+      .author {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: flex-end;
+        .name {
+          font-size: 2.2rem;
+          font-family: MaShanZhengRegular;
+          letter-spacing: 0.1rem;
+          > span {
+            font-family: Filxgirl;
+          }
+        }
+        .date {
+          font-size: 2.3rem;
+          letter-spacing: 0.1rem;
+          font-family: Filxgirl;
+          font-weight: bolder;
+          position: relative;
+        }
+      }
+    }
+  }
+}

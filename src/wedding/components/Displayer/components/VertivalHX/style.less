@@ -1,0 +1,50 @@
+.vlogo {
+  height: 100%;
+  width: 20%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  img {
+    position: absolute;
+    width: 10.5rem;
+    object-fit: contain;
+    transform: translateX(-50%);
+    animation: bounce 8s ease-in-out infinite;
+  }
+
+  @keyframes bounce {
+    0%,
+    100% {
+      transform: rotate3d(1, 1, 0, 14deg);
+      transform: scale(0.9);
+      opacity: 1;
+    }
+    25% {
+      transform: rotate3d(-1, 1, 0, 14deg);
+      transform: scale(0.95);
+      opacity: 0.8;
+    }
+    50% {
+      transform: rotate3d(-1, -1, 0, 14deg);
+      transform: scale(1.1);
+      opacity: 0.9;
+    }
+    75% {
+      transform: rotate3d(1, -1, 0, 14deg);
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+  .huan {
+    position: absolute;
+    top: 10%;
+    // left: 50%;
+  }
+  .xi {
+    position: absolute;
+    top: 68%;
+    // left: 50%;
+  }
+}

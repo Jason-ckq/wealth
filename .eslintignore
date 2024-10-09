@@ -1,0 +1,8 @@
+/.git
+/.vscode
+node_modules/**
+dist/**
+public
+build
+*.spec.js
+src/*.d.ts
