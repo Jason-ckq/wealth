@@ -19,7 +19,6 @@ import './style';
 
 // 入口模块
 import Wedding from './wedding';
-import LxpByf from './wedding/pages/Entry/LxpByf';
 // 容器
 const container = document.querySelector('#app');
 // 启动
@@ -32,7 +31,6 @@ const bootstrap = () => {
             <Routes>
               <Route path="/" element={<Navigate to="/wedding" />} />
               <Route path="/wedding/*" element={<Wedding />} />
-              <Route path="/devlop" element={<div>开发</div>} />
             </Routes>
           </HashRouter>
         </Provider>
